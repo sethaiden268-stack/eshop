@@ -105,7 +105,7 @@
       </nav>
     </main>
   </noscript>
-  <script src="./capacitor-api-config.js"></script>
+  <script src="./web-api-config.js"></script>
   <script>
 const icon=(name,size=16)=>{const p={search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>',heart:'<path d="M20.8 8.8c0 5-8.8 10.3-8.8 10.3S3.2 13.8 3.2 8.8A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.4Z"/>',bag:'<path d="M5 8h14l1 12H4L5 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/>',bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>',plus:'<path d="M12 5v14M5 12h14"/>',chart:'<path d="M4 19V5m0 14h16M8 16v-4m4 4V7m4 9v-7"/>',box:'<path d="m4 7 8-4 8 4-8 4-8-4Z"/><path d="M4 7v10l8 4 8-4V7M12 11v10"/>'};return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p[name]||p.plus}</svg>`};
 const API_BASE=String(window.ESHOP_API_BASE||'').replace(/\/+$/,'');const apiUrl=path=>`${API_BASE}${path}`;

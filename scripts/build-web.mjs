@@ -23,16 +23,11 @@ fs.mkdirSync(outputDir, { recursive: true });
 for (const file of webFiles) {
   const source = path.join(projectRoot, file);
   if (!fs.existsSync(source)) throw new Error(`Missing web asset: ${file}`);
-  let contents = fs.readFileSync(source, 'utf8');
-  if (file === 'index.html') {
-    contents = contents.replace('./capacitor-api-config.js', './web-api-config.js');
-  }
-  fs.writeFileSync(path.join(outputDir, file), contents);
+  fs.copyFileSync(source, path.join(outputDir, file));
 }
 
 const serviceWorker = fs.readFileSync(path.join(projectRoot, 'sw.js'), 'utf8')
-  .replace('eshop-shell-v2', 'eshop-web-shell-v1')
-  .replaceAll('capacitor-api-config.js', 'web-api-config.js');
+  .replace('eshop-shell-v2', 'eshop-web-shell-v1');
 fs.writeFileSync(path.join(outputDir, 'sw.js'), serviceWorker);
 
 fs.writeFileSync(path.join(outputDir, 'web-api-config.js'), `// Optional API origin for a separately hosted E SHOP Worker.\nwindow.ESHOP_API_BASE = window.ESHOP_API_BASE || '';\n`);

@@ -2,25 +2,13 @@
   "name": "eshop-marketplace",
   "private": true,
   "version": "1.0.0",
-  "description": "E SHOP marketplace web app and Capacitor mobile shell",
+  "description": "E SHOP marketplace web app",
   "scripts": {
-    "build:mobile": "node scripts/build-mobile.mjs",
     "build:web": "node scripts/build-web.mjs",
-    "cap:sync": "npm run build:mobile && cap sync",
-    "cap:android": "npm run build:mobile && cap sync android",
-    "cap:ios": "npm run build:mobile && cap sync ios",
-    "cap:open:android": "cap open android",
-    "cap:open:ios": "cap open ios",
-    "dev": "npm run build:mobile && wrangler dev",
-    "deploy": "npm run build:mobile && wrangler deploy"
-  },
-  "dependencies": {
-    "@capacitor/android": "^8.0.0",
-    "@capacitor/core": "^8.0.0",
-    "@capacitor/ios": "^8.0.0"
+    "dev": "npm run build:web && wrangler dev",
+    "deploy": "npm run build:web && wrangler deploy"
   },
   "devDependencies": {
-    "@capacitor/cli": "^8.0.0",
     "wrangler": "^4.0.0"
   },
   "overrides": {

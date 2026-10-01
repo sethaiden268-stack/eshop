@@ -39,7 +39,7 @@ Set the Paystack secret key as a Worker secret:
 npx wrangler secret put PAYSTACK_SECRET_KEY
 ```
 
-For Capacitor API calls, set `APP_ORIGINS` in `wrangler.jsonc` to a comma-separated allowlist containing only your real web origin and native origins you use, for example `https://shop.example.com,https://localhost,capacitor://localhost`. Do not use `*`.
+Set `APP_ORIGINS` in `wrangler.jsonc` to a comma-separated allowlist containing only your real web origin, for example `https://shop.example.com`. Do not use `*`.
 
 Run locally or deploy:
 
