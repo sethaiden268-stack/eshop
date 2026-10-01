@@ -1,0 +1,11 @@
+{
+  "appId": "com.eshop.marketplace",
+  "appName": "E SHOP",
+  "webDir": "www",
+  "backgroundColor": "#ffffff",
+  "loggingBehavior": "none",
+  "android": {
+    "androidScheme": "https",
+    "resolveServiceWorkerRequests": false
+  }
+}
