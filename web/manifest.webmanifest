@@ -1,0 +1,21 @@
+{
+  "name": "E SHOP — Curated marketplace",
+  "short_name": "E SHOP",
+  "description": "Discover independent stores and considered products in one modern marketplace.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
+

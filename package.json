@@ -5,6 +5,7 @@
   "description": "E SHOP marketplace web app and Capacitor mobile shell",
   "scripts": {
     "build:mobile": "node scripts/build-mobile.mjs",
+    "build:web": "node scripts/build-web.mjs",
     "cap:sync": "npm run build:mobile && cap sync",
     "cap:android": "npm run build:mobile && cap sync android",
     "cap:ios": "npm run build:mobile && cap sync ios",

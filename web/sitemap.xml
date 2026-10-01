@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The deployed Cloudflare Worker generates absolute URLs for this sitemap from the request hostname. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>/products.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>/stores.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>/services.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+</urlset>
